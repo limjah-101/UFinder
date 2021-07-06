@@ -23,14 +23,14 @@ class App extends Component {
     };
 
     selectedVideo = video => {
-        console.log(video);
+        console.log("VIDEO", video);
         this.setState({ clickedVideo: video });
         window.scrollTo(0,0);
         
     }
     
     render() { 
-        console.log(this.state.videos);
+        console.log("video", this.state.videos);
         return ( 
             <>
                 <Navbar />
